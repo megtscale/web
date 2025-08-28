@@ -134,7 +134,7 @@
           refEl.value = document.referrer || "";
 
           // Progressive enhancement: try fetch in parallel for reliability.
-          // Page won't navigate because the form targets a hidden iframe.
+          /*
           try {
             const email = emailEl.value.trim();
             if(!email){
@@ -158,6 +158,7 @@
           } catch (err) {
             // Silent; hidden iframe submission will handle it.
           }
+          */
         });
 
         // Optional: basic email validation feedback
